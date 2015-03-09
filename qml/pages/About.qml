@@ -28,9 +28,9 @@ Page {
         horizontalAlignment: Text.AlignHCenter
         Component.onCompleted: {
             if (storage.lang()==="eng") {
-                aboutPageLabel.text = "Simple Bash Reader<br>by Fedor Zaytsev<br><br>Source code can be found at<br><a href=\"https://github.com/rusphantom/bashReaderSailfish/\">Github</a>"
+                aboutPageLabel.text = "<b>Bash Reader</b><br>by Fedor Zaytsev<br><br>Source code can be found at<br><a href=\"https://github.com/rusphantom/bashReaderSailfish/\">Github</a>"
             } else {
-                aboutPageLabel.text = "Bash Reader<br>Автор Федор Зайцев<br><br>Исходный код можно найти на <br><a href=\"https://github.com/rusphantom/bashReaderSailfish/\">Github</a>"
+                aboutPageLabel.text = "<b>Bash Reader</b><br>Автор Федор Зайцев<br><br>Исходный код можно найти на <br><a href=\"https://github.com/rusphantom/bashReaderSailfish/\">Github</a>"
             }
         }
         onLinkActivated: {
