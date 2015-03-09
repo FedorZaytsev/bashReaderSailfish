@@ -31,20 +31,13 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "pages"
-import harbour.bashreader.translator 1.0
 import harbour.bashreader.storage 1.0
-import harbour.bashreader.DebugInfo 1.0
 
 ApplicationWindow
 {
     id: rootElement
 
     property string coverText: "Bash Reader"
-
-    DebugInfo {
-        id: debugInfo
-        Component.onCompleted: debugInfo.init()
-    }
 
     Storage {
         id: storage
@@ -55,10 +48,6 @@ ApplicationWindow
         Component.onDestruction: {
             storage.saveAll()
         }
-    }
-
-    Translator {
-        id: translator
     }
 
     initialPage: Component { Menu { id:pageMenu } }

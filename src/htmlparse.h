@@ -31,12 +31,6 @@ public:
     Q_INVOKABLE QString rate_key(int id);
 
 
-signals:
-    void finished(QString data);
-public slots:
-    void replyFinished(QNetworkReply*);
-
-
 private:
     QVector<struct bashQuote> m_data;
     QString m_nextPage;

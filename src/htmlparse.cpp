@@ -50,10 +50,6 @@ HTMLParse::~HTMLParse() {
     delete proc;
 }
 
-void HTMLParse::replyFinished(QNetworkReply* reply) {
-    qDebug()<<"ANSWER: "<<reply->readAll();
-}
-
 void HTMLParse::parseEng(QString str)
 {
     m_data.clear();

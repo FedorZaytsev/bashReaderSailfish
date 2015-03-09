@@ -13,7 +13,6 @@ CurlProxy::~CurlProxy() {
 }
 
 void CurlProxy::rateRU(QVariant var1, QVariant var2) {
-    qDebug()<<"newTask";
     emit newTask(var1.toString(),var2.toString());
 }
 

@@ -55,7 +55,7 @@ bool FileIO::write(const QString& data)
 
     QFile file(m_fpath+"/"+mSource);
     if (!file.open(QFile::WriteOnly | QFile::Truncate | QFile::Text)) {
-        qDebug()<<"noaccess for file";
+        qDebug()<<"Cannot open file"<<m_fpath+"/"+mSource;
         return false;
     }
 

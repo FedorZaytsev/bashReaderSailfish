@@ -40,7 +40,6 @@ BackgroundItem {
     }
 
     onClicked: {
-        console.log("open quote page for ",quote, ident)
         pageStack.push(Qt.resolvedUrl("QuotePage.qml"),{
                            quote: quote,
                            date: date,
@@ -53,7 +52,6 @@ BackgroundItem {
 
 
     onPressAndHold: {
-        console.log("ident is "+ident+" index "+index)
         contextMenu = contextComponent.createObject(listView,{ident:ident, index: index})
 
         contextMenu.show(delegate);

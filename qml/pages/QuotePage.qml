@@ -34,13 +34,6 @@ Page {
                 width: (Screen.width - 3*Theme.paddingLarge)/2
                 color: Theme.highlightColor
                 text: "#"+id
-                /*{
-                    if (storage.lang() === "ru") {
-                        return "<a href=\"http://bash.im/quote/"+id+"\">#"+id+"</a>"
-                    } else {
-                        return "<a href=\"http://bash.org/?"+id+"\">#"+id+"</a>"
-                    }
-                }*/
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
@@ -65,7 +58,6 @@ Page {
             MouseArea {
                 anchors.fill: parent
                 onPressAndHold: {
-                    console.log("coping text")
                     Clipboard.text = quote
                     if (storage.lang() === "ru") {
                         infoPopup.show("Copied!",2)

@@ -42,10 +42,8 @@
 #include <QTextStream>
 #include "htmlparse.h"
 #include "fileio.h"
-#include "translator.h"
 #include "storage.h"
 #include "curlproxy.h"
-#include "debuginfo.h"
 
 
 int main(int argc, char *argv[])
@@ -60,10 +58,8 @@ int main(int argc, char *argv[])
     // To display the view, call "show()" (will show fullscreen on device).
 
     qmlRegisterType<HTMLParse>("harbour.bashreader.htmlparse", 1, 0, "HtmlParse");
-    qmlRegisterType<Translator>("harbour.bashreader.translator", 1, 0, "Translator");
     qmlRegisterType<Storage>("harbour.bashreader.storage", 1, 0, "Storage");
     qmlRegisterType<FileIO>("harbour.bashreader.FileIO", 1, 0, "FileIO");
-    qmlRegisterType<DebugInfo>("harbour.bashreader.DebugInfo", 1, 0, "DebugInfo");
 
 
     return SailfishApp::main(argc, argv);

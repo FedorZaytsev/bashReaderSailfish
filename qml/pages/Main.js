@@ -125,7 +125,6 @@ function updateRating(index,action) {
     }
 
     var rate_str = listModel.get(index).rating
-    console.log("UPdateRating",rate_str)
     if (canBeANumber(rate_str)) {
         var rate = +rate_str
         if (action === "rulez") rate++
@@ -208,7 +207,6 @@ function rate(ident, index, action) {
 }
 
 function tryToRateUnrated() {
-    console.log("tryToRateUnrated")
     for (var i=0;i<storage.rateSize();i++) {
         var url = storage.rateUrl(i)
         sendRequest(url,function(){

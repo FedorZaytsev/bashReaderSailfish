@@ -17,11 +17,9 @@ CONFIG += sailfishapp c++11
 SOURCES += src/harbour-bashreader.cpp \
     src/htmlparse.cpp \
     src/fileio.cpp \
-    src/translator.cpp \
     src/storage.cpp \
     src/curlproxy.cpp \
-    src/curlthread.cpp \
-    src/debuginfo.cpp
+    src/curlthread.cpp
 
 
 OTHER_FILES += qml/harbour-bashreader.qml \
@@ -47,11 +45,9 @@ TRANSLATIONS += translations/$${TARGET}-ru.ts
 HEADERS += \
     src/htmlparse.h \
     src/fileio.h \
-    src/translator.h \
     src/storage.h \
     src/curlproxy.h \
-    src/curlthread.h \
-    src/debuginfo.h
+    src/curlthread.h
 
 
 
